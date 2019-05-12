@@ -107,14 +107,10 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading-main,
-  h2.lg-heading-main,
-  h3.lg-heading-main {
-    font-size: 6rem; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -170,9 +166,7 @@ section {
     overflow: hidden; }
     section#home h1 {
       margin-top: 20vh; }
-  section#about .bio {
-    letter-spacing: .1rem; }
-  section#about, section#contact {
+  section#about {
     background: #01afa6; }
 
 .about-info {
@@ -199,9 +193,6 @@ section {
   display: grid;
   grid-gap: .7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects .item {
-    margin-top: 2rem;
-    margin: 3px #01afa6 solid; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -212,14 +203,22 @@ section {
 
 .boxes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #01afa6;
+      color: #fff; }
+      .boxes div:hover span {
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -241,7 +240,7 @@ section {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #fff;
+  background: #e6e6e6;
   color: #000;
   height: 60px; }
 
@@ -287,8 +286,6 @@ section {
   .about-info {
     grid-template-areas: 'bioimage' 'bio';
     grid-template-columns: 1fr; }
-    .about-info .bio {
-      font-size: 1.2rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -297,21 +294,15 @@ section {
     padding: 2rem; }
     header #home h1 {
       margin-top: 10vh; }
-    header .lg-heading-main {
+    header .lg-heading {
       margin-top: 1rem;
-      font-size: 3.5rem; }
+      font-size: 5rem; }
   section {
     padding: 2rem; }
     section #home h1 {
       margin-top: 10vh; }
     section .lg-heading {
       margin-top: 1rem;
-      font-size: 2rem; }
-  #about .lg-heading {
-    margin-bottom: 2.5rem; }
-  #about .bio {
-    font-size: 1.2rem; }
+      font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; }
-  .boxes div {
-    font-size: 1.2rem; } }
+    grid-template-columns: 1fr; } }
