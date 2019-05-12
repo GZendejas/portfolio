@@ -59,14 +59,14 @@
       background-position: center;
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #01afa6; }
+      border: solid 3px #1294f1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #01afa6; }
+      color: #1294f1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #01afa6; }
+      color: #1294f1; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -99,7 +99,7 @@ body {
   background: #fff;
   color: #000;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5; }
 
 h1,
@@ -132,7 +132,7 @@ a {
   width: 100%; }
 
 .text-secondary {
-  color: #01afa6; }
+  color: #1294f1; }
 
 .text-secondary-alt {
   color: #fff; }
@@ -147,9 +147,9 @@ header {
     margin-top: 1rem; }
     header .icons a {
       padding: 0.4rem;
-      color: #01afa6; }
+      color: #1294f1; }
       header .icons a:hover {
-        color: #18fef2;
+        color: #72c0f7;
         transition: all 0.5s ease-out; }
   header#home {
     overflow: hidden; }
@@ -162,18 +162,20 @@ section {
     margin-top: 1rem; }
     section .icons a {
       padding: 0.4rem;
-      color: #01afa6; }
+      color: #1294f1; }
       section .icons a:hover {
-        color: #18fef2;
+        color: #72c0f7;
         transition: all 0.5s ease-out; }
   section#home {
     overflow: hidden; }
     section#home h1 {
       margin-top: 20vh; }
   section#about .bio {
-    letter-spacing: .1rem; }
+    letter-spacing: .05rem;
+    line-height: 2.5rem;
+    color: #262626; }
   section#about, section#contact {
-    background: #01afa6; }
+    background: #1294f1; }
 
 .about-info {
   display: grid;
@@ -200,14 +202,15 @@ section {
   grid-gap: .7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects .item {
-    margin-top: 2rem;
-    margin: 3px #01afa6 solid; }
+    margin-top: 2rem; }
+    .projects .item img {
+      border-radius: 1rem; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px black solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #01afa6;
+      border-color: #1294f1;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -219,7 +222,9 @@ section {
     font-size: 1.5rem;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    color: #262626;
+    letter-spacing: .3rem; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -227,22 +232,27 @@ section {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #01afa6;
-    color: #fff; }
+    background: #1294f1;
+    color: #000; }
 
 .btn-dark {
   background: gray;
-  color: #fff; }
+  background: black;
+  color: #fff;
+  border-radius: .5rem;
+  text-align: center; }
 
 .btn-light {
-  background: white;
-  color: #333; }
+  border: 2px #72c0f7 solid;
+  color: #333;
+  border-radius: .5rem;
+  text-align: center; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #fff;
-  color: #000;
+  background: #1294f1;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
