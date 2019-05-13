@@ -3,13 +3,17 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .about-info .bio {
+        font-size: 1.3rem;
+    }
 }
 
 // Desktops & Laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
-    }
+    }  
 }
 
 // Tables & Small Laptops
@@ -69,7 +73,8 @@
         grid-template-columns: 1fr;
 
         .bio {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            text-align: left;
         }
     }
 
@@ -105,8 +110,6 @@
             margin-top: 1rem;
             font-size: 2rem;
         }
-
-       
     }
 
     #about {
@@ -115,7 +118,7 @@
         }
 
         .bio {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -123,11 +126,21 @@
         grid-template-columns: 1fr;
     }
 
-   
+   #contact {
+       padding: 2rem 0;
+       overflow: hidden;
+   }
 
     .boxes {
         div {
-            font-size: 1.2rem;
+            font-size: 1rem;
+            letter-spacing: .1rem;
         }
+    }
+
+    #main-footer {
+        overflow: hidden;
+        font-size: .6rem;
+        padding: 2rem 0;
     }
 }
