@@ -2,6 +2,7 @@
 @include mediaXl {
     .projects {
         grid-template-columns: repeat(4, 1fr);
+        
     }
 
     .about-info .bio {
@@ -12,7 +13,8 @@
 // Desktops & Laptops
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
     }  
 }
 
@@ -23,7 +25,7 @@
         text-align: center;
         
         .lg-heading {
-            line-height: 1;
+            line-height: 1rem;
             margin-bottom: 1rem;
         }
     }
@@ -33,8 +35,8 @@
         text-align: center;
         
         .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
+            line-height: 1rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -80,6 +82,19 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact {
+        .lg-heading {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .boxes {
+        div {
+            font-size: .9rem;
+            letter-spacing: .25rem;
+        }
     }
 
     
