@@ -201,6 +201,12 @@ section {
     .about-info .bio .text-secondary-alt {
       font-weight: 700;
       letter-spacing: .1rem; }
+  .about-info .bio__list-tech {
+    margin-left: 7rem; }
+  .about-info .bio__list-item {
+    margin: 0;
+    color: white;
+    font-weight: 700; }
 
 .projects {
   display: grid;
@@ -218,6 +224,18 @@ section {
       border-color: #1294f1;
       transition: all 0.5s ease-out; }
 
+.projects__name {
+  color: #0b78c5;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  text-transform: uppercase; }
+
+.projects__word-color {
+  color: #095a94;
+  font-weight: 700; }
+
 .boxes {
   display: flex;
   justify-content: space-evenly;
@@ -232,8 +250,13 @@ section {
     font-size: 1.2rem;
     font-weight: 700; }
 
+.contact-icons {
+  text-align: center; }
+  .contact-icons a {
+    margin: 2rem; }
+
 .btn, .btn-dark, .btn-light {
-  display: block;
+  display: inline-block;
   padding: 0.5rem 2rem;
   border: 0;
   margin-bottom: 0.3rem; }
@@ -247,6 +270,9 @@ section {
   color: #fff;
   border-radius: .5rem;
   text-align: center; }
+  .btn-dark i {
+    font-size: 1.2rem;
+    margin-left: .3rem; }
 
 .btn-light {
   border: 2px #72c0f7 solid;
@@ -266,13 +292,17 @@ section {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    column-gap: 7rem;
+    row-gap: 5rem;
+    padding: 0 5rem; }
   .about-info .bio {
     font-size: 1.3rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    padding: 0 7rem; } }
 
 @media screen and (max-width: 768px) {
   header {
@@ -312,7 +342,7 @@ section {
       font-size: 1.1rem;
       text-align: left; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 1fr; }
   #contact .lg-heading {
     margin-bottom: 4rem; }
   .boxes div {
@@ -339,7 +369,8 @@ section {
   #about .bio {
     font-size: 1.1rem; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    row-gap: 3rem; }
   #contact {
     padding: 2rem 0;
     overflow: hidden; }

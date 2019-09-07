@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Guillermo Zendejas | Web Developer | guillermozendejas.com</title>
-    <meta name="description" content="Guillermo Zendejas is a freelance web developer from San Jose, California. He provides frontend solutions for clients (web design and programming)">
+    <meta name="description" content="Guillermo Zendejas is a React web developer from the San Francisco Bay Area. He specializes in responsive, dynamic applications (web design and programming)">
 </head>
 <body id="bg-img">
     <div class="menu-container" >
@@ -35,7 +35,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#work" class="nav-link">
-                        My Work
+                        My Portfolio
                     </a>
                 </li>
                 <li class="nav-item">
@@ -76,37 +76,63 @@
 
             <div class="bio">
                 <h3 class="text-secondary-alt bio-greeting" >Hi there!</h3>
-                <p>My name is Guillermo Zendejas (or "Memo" for short), and I'm a freelance web developer in San Jose, CA, specializing in modern responsive websites and applications.</p>
+                <p>My name is Guillermo Zendejas (or "Memo" for short), and I'm a web developer from the San Francisco Bay Area, specializing in modern responsive websites and applications. I'm proficient in the following technologies and tools:</p>
+                <div class="bio__list-tech">
+                    <p class="bio__list-item">React</p>
+                    <p class="bio__list-item">Redux</p>
+                    <p class="bio__list-item">JavaScript</p>
+                    <p class="bio__list-item">Firebase</p>
+                    <p class="bio__list-item">Babel</p>
+                    <p class="bio__list-item">Sass/CSS</p>
+                    <p class="bio__list-item">Webpack</p>
+                    <p class="bio__list-item">Git</p>
+                </div>
                 <p>I also hold a bachelor's degree in finance from San Jose State University, and worked in commercial banking for several years.</p>
-                <a class="quote-link" href="#contact"><p class="text-secondary-alt">Please feel free to contact me for a quote.</p></a>
+                <a class="quote-link" href="#contact"><p class="text-secondary-alt">Please feel free to contact me with any questions or comments.</p></a>
             </div>
         </div>
     </section >
 
     <section id="work">
         <h2 class="lg-heading">
-            My <span class="text-secondary">Work</span> 
+            My <span class="text-secondary">Portfolio</span> 
         </h2>
         <div class="projects">
             <div class="item">
-                <a target="_blank" href="https://gzendejas.github.io/queens_boxing">
+                <h3 class="projects__name">Cartrac</h3>
+                <a target="_blank" href="https://cartrac-repair-log.herokuapp.com">
                     <img src="img/projects/cartrac_screen.jpg" alt="project 1">
                 </a>
+                <p>Responsive app built with <span class="projects__word-color">React</span>, Redux, <span class="projects__word-color">React Router</span>, <span class="projects__word-color">Firebase</span> (for database and authentication features), and <span class="projects__word-color">Webpack</span> to manage <span class="projects__word-color">Babel</span> and <span class="projects__word-color">Sass</span> compiling, file bundling, and production and development environments.</p>
+                <a class="btn-dark" target="_blank" href="https://github.com/GZendejas/cartrac-repair-log">Github Repo <i class="fab fa-github fa-2x"></i></a>
+                <a class="btn-light" target="_blank" href="">Go to URL</a>
             </div>
             <div class="item">
+                <h3 class="projects__name">Francesco's Pizza</h3>
                 <a target="_blank" href="https://gzendejas.github.io/francescos_pizza">
                     <img src="img/projects/francesco_screen2.jpg" alt="project 2">
                 </a>
+                <p>Responsive restaurant website built with <span class="projects__word-color">JavaScript</span>, <span class="projects__word-color">HTML</span>, and <span class="projects__word-color">Sass</span>.</p>
+                <a class="btn-dark" target="_blank" href="https://github.com/GZendejas/francescos_pizza">Github Repo <i class="fab fa-github fa-2x"></i></a>
+                <a class="btn-light" target="_blank" href="https://gzendejas.github.io/francescos_pizza">Go to URL</a>
             </div>
             <div class="item">
+                <h3 class="projects__name">Queens Boxing</h3>
                 <a target="_blank" href="https://gzendejas.github.io/queens_boxing">
                     <img src="img/projects/queens_screen2.jpg" alt="project 3">
                 </a>
+                <p>Responsive gym website built with <span class="projects__word-color">JavaScript</span>, <span class="projects__word-color">HTML</span>, and <span class="projects__word-color">Sass</span>.</p>
+                <a class="btn-dark" target="_blank" href="https://github.com/GZendejas/cartrac-repair-log">Github Repo <i class="fab fa-github fa-2x"></i></a>
+                <a class="btn-light" target="_blank" href="https://gzendejas.github.io/queens_boxing">Go to URL</a>
             </div>
             <div class="item">
+                <h3 class="projects__name">Carie Nakamura</h3>
                 <a target="_blank" href="https://gzendejas.github.io/cnfoundation">
                     <img src="img/projects/carrie_screen2.jpg" alt="project 4">
                 </a>
+                <p>Responsive non-profit foundation website built with <span class="projects__word-color">JavaScript</span>, <span class="projects__word-color">HTML</span>, and <span class="projects__word-color">Sass</span>.</p>
+                <a class="btn-dark" target="_blank" href="https://github.com/GZendejas/cartrac-repair-log">Github Repo <i class="fab fa-github fa-2x"></i></a>
+                <a class="btn-light" target="_blank" href="https://gzendejas.github.io/cnfoundation">Go to URL</a>
             </div>
         </div>
     </section>
@@ -117,11 +143,20 @@
         </h2>
         
         <div class="boxes">
+                
             <div>
                 <span class="text-secondary-alt">EMAIL: </span> memo@guillermozendejas.com
             </div>
             
         </div>
+        <div class="contact-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/guillermozendejas">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a target="_blank" href="https://github.com/GZendejas">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
     </section>
 
     <footer id="main-footer">

@@ -167,12 +167,23 @@ section {
             letter-spacing: .1rem;
         }
     }
+
+    .bio__list-tech {
+        margin-left: 7rem;
+    }
+
+    .bio__list-item {
+        margin: 0;
+        color: white;
+        font-weight: 700;
+    }
 }
 
 // Work/Projects
 .projects {
     display: grid;
     grid-gap: .7rem;
+    // grid-template-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
     .item {
@@ -194,6 +205,20 @@ section {
             @include easeOut;
         }
     }
+}
+
+.projects__name {
+    color: darken($secondary-color, 10);
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.projects__word-color {
+    color: darken($secondary-color, 20);
+    font-weight: 700;
 }
 
 // Contact Page
@@ -218,10 +243,18 @@ section {
     }
 }
 
+.contact-icons {
+    text-align: center;
+
+    a {
+        margin: 2rem;
+    }
+}
+
 
 // Button Styles
 .btn {
-    display: block;
+    display: inline-block;
     padding: 0.5rem 2rem;
     border: 0;
     margin-bottom: 0.3rem;
@@ -238,6 +271,11 @@ section {
     color: #fff;
     border-radius: .5rem;
     text-align: center;
+
+    i {
+        font-size: 1.2rem;
+        margin-left: .3rem;
+    }
     
 }
 
