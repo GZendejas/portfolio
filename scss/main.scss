@@ -144,6 +144,9 @@ section {
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         grid-area: bioimage;
         margin: auto;
         height: 180px;
@@ -168,7 +171,8 @@ section {
         }
     }
 
-    .bio__list-tech {
+    .bio__list-tech div {
+        display: inline-block;
         margin-left: 7rem;
     }
 

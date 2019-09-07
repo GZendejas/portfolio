@@ -185,6 +185,9 @@ section {
   grid-template-areas: 'bioimage bio bio';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     grid-area: bioimage;
     margin: auto;
     height: 180px;
@@ -201,7 +204,8 @@ section {
     .about-info .bio .text-secondary-alt {
       font-weight: 700;
       letter-spacing: .1rem; }
-  .about-info .bio__list-tech {
+  .about-info .bio__list-tech div {
+    display: inline-block;
     margin-left: 7rem; }
   .about-info .bio__list-item {
     margin: 0;
@@ -368,6 +372,9 @@ section {
     margin-bottom: 2.5rem; }
   #about .bio {
     font-size: 1.1rem; }
+  #about .bio__list-tech div {
+    display: inline-block;
+    margin-left: 2rem; }
   .projects {
     grid-template-columns: 1fr;
     row-gap: 3rem; }

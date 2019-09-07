@@ -141,6 +141,11 @@
         .bio {
             font-size: 1.1rem;
         }
+
+        .bio__list-tech div {
+            display: inline-block;
+            margin-left: 2rem;
+        }
     }
 
     .projects {
